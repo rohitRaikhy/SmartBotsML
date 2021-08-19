@@ -50,3 +50,7 @@ For this model we used recurrent neural networks with seq2seq architecture. Tens
 
 Through the progression of these bots it is obvious that deep learning techniques can greatly enhance the accuracy of predictions for chatbot classifications. However the biggest advancement in the bots comes from the increase in the size and complexity of data sets. At a certain point there are limitations of the performance of any model where the accuracy depends on the volume of training data provided. The downside however to large data sets is cost of computation for both time and cpu. This led to the biggest error in accuracy of the Seq2Seq chatbot. 
 Currently, chatbots are now an essential tool for businesses to handle customers on a daily basis and there are hundreds of developers competing to produce the most efficient and intelligent bot. The field is rapidly evolving and finding new means of raising the bar: “As the market matures, 40% of chatbot/virtual assistant applications launched in 2018 will have been abandoned by 2020” (https://www.artificial-solutions.com/chatbots#14) Natural language processing is essential to creating a life-like agent, this will allow bots not just to answer questions relating to a specific cause, but also have complex conversations that capture nuances of language and human relationships. 
+
+# Interface Examples of Chatbots
+
+![Screen Shot 2021-08-18 at 5 47 05 PM](https://user-images.githubusercontent.com/35156624/130003646-0ed3eeb5-2505-4728-bb6a-f188c79e0ac0.png)
