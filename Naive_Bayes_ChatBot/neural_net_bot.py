@@ -25,7 +25,7 @@ class NeuralNetBot():
         with open('chatbot_data.json') as file:
             data = json.load(file)
 
-        training_sentences, training_labels, labels, responses = []
+        training_sentences, training_labels, labels, responses = [], [], [], []
 
         for intention in data['intents']:
             for pattern in intention['patterns']:
@@ -77,8 +77,8 @@ class NeuralNetBot():
         with open(test_file) as file:
             data = json.load(file)
 
-        test_inputs, responses = {}
-        correct, total = 0
+        test_inputs, responses = {}, {}
+        correct, total = 0, 0
 
         for intention in data['intents']:
             for pattern in intention['inputs']:
