@@ -4,11 +4,11 @@
  
 Conversational ChatBot's built using Seq2Seq model, Decision Tree's & Random Forests models. Python 3.6 & tensorflow 1.0.0. Comparision of chatbot's on performance and accuracy.
 
-How to run:
+# How to run:
 	
 To run the neural net and bayes classifier chat bot please input program name and desired bot type: “interactive_chat.py --neuralnet” or “interactive_chat.py --naivebayes” 
 
-To run the RNN model:
+# To run the RNN model:
 
 There is a pre-trained model called chatbot_weight.ckpt. If using this pre-trained model, one can run the preprocessing data, model building parts of the jupyter notebook. Then one can skip the training part and go to the testing part of the notebook. Warning: training the model will take a considerably long time if not using a GPU booster. To quit the chatbot enter the word "Goodbye" and the chatbot will exit. Trained model will not provide accurate results, trained on 3 epochs, will need further training if more accurate results are desired. 
 
