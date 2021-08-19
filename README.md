@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/35156624/127047027-2f35a3e2-67fa-4883-82e1-9f5395ae40f8.png)
  
-Conversational ChatBot's built using Seq2Seq model, Decision Tree's & Random Forests models. Python 3.6 & tensorflow 1.0.0. Comparision of chatbot's on performance and accuracy.
+Conversational ChatBot's built using Seq2Seq model, Keras ANN's, Naive Bayes & Random Forests models. Python 3.6 & tensorflow 1.0.0. Comparision of chatbot's on performance and accuracy.
 
 # How to run:
 	
@@ -21,7 +21,6 @@ Our goal for this project was to explore the difference between very naive metho
 To implement a Naive Bayes based chat bot, we used a multinomial classifier, allowing each word in the training examples counted in order to be used to calculate the probability of each possible response given the evidence of some inputted string of words. Training data can be found in chatbot_data.json. For each sentence given to the bot the algorithm processes the data into a string of words, then there is a calculation for the probability of that word appearing given each certain response class (# times appeared in that specific class / total # of times appeared) at which point the probability for each was multiplied together then finally multiplied by the probability for a response of that class (# of words in that class / total # of words). This algorithm was able to run fairly quickly for each inputted response and worked fairly well for relevant questions. 
 
 Issues faced when testing this method were errors due to overlap of less relevant words. The first fix for this was to introduce a list of “Stop words” that would prevent irrelevant contractions and such (like ‘and’, ‘is’, ‘to’, etc) to keep inaccurate responses from popping up. Ultimately though, most words must be retained and in testing it was obvious where some of these errors broke the bot. For instance asking the bot “who are you” would result in the wrong response because the probability for a complaint response won because the prior probability for complaints was higher than the correct answer, and the word “are” appeared very regularly in that category. However, asking “who is this” provoked the correct response because it did not contain the troublesome “are” issue. These issues are seen to be fixed in more complex methods for the bot. Overall this bot predicted 8 out of 15 correct testing examples. 
-
 
 
 # Random Forests 
