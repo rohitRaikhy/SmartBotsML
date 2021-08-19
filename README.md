@@ -36,6 +36,8 @@ Overall this bot performed much better than the non-deep learning approaches. Ho
 
 # Neural Net with Seq2Seq (Using large scope training set)
 
+![image](https://user-images.githubusercontent.com/35156624/130003456-690ecc20-7166-4da5-afcd-05ce928ccba9.png)
+
 Figure 1.1, https://towardsdatascience.com/day-1-2-attention-seq2seq-models-65df3f49e263
 
 For this model we used recurrent neural networks with seq2seq architecture. Tensorflow 1.0.0 and python 3.5. The model’s architecture is composed of an encoder and decoder. The encoder gathers information from the input sequence and feeds it into the decoder, which produces the output sequence. The data set used was the Cornell movie lines data set. The data is preprocessed to allow for the neural network to read the data. Since the data is categorical, the text is transformed to integer values which were gained from mapping the lines with the conversation numbers in a hash table. Lines that reached a threshold of 20 had to be removed, as this would increase the time taken for the RNN to train the data. A cross validation approach is used with a 20-80 split for training and test data. 
