@@ -58,4 +58,5 @@ Currently, chatbots are now an essential tool for businesses to handle customers
 # Interface Examples of Chatbots
 
 ![Screen Shot 2021-08-18 at 5 47 05 PM](https://user-images.githubusercontent.com/35156624/130003646-0ed3eeb5-2505-4728-bb6a-f188c79e0ac0.png)
+
 Figure 1.3, interface of chatbot
