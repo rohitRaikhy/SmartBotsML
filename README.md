@@ -26,8 +26,10 @@ Issues faced when testing this method were errors due to overlap of less relevan
 
 # Random Forests 
 
+Random forests are constructed from decision tree algorithms. The algorithm uses ensemble learning, which combines many classifiers to produce solutions to complex problems. The algorithm consists of many decision tree's which predicts tge acerage output from the various tree's. The cahtbot follows the idea of superivsed learning classification, by gaining information from the user through intents and keywords, creating a intent classification and outputting the result. The data set used is small, therefore the random forest will not perform well outside the scope of the dataset. However, it did perform well for the data set provided. The data is preprocessed to seperate feautures, labels and intents. Scikit learn is used to transform the data to a matrix of tokens and perform the model estimation using the RandomForestClassifier module. 
 
-
+![image](https://user-images.githubusercontent.com/35156624/130139945-70c499f7-f6b0-4204-ac8e-5a235515281c.png)
+Figure 1.1, https://www.section.io/engineering-education/introduction-to-random-forest-in-machine-learning/
 
 # Neural Net with Keras (Using limited scope training set)
 
@@ -40,7 +42,7 @@ Overall this bot performed much better than the non-deep learning approaches. Ho
 
 ![image](https://user-images.githubusercontent.com/35156624/130003456-690ecc20-7166-4da5-afcd-05ce928ccba9.png)
 
-Figure 1.1, https://towardsdatascience.com/day-1-2-attention-seq2seq-models-65df3f49e263
+Figure 1.2, https://towardsdatascience.com/day-1-2-attention-seq2seq-models-65df3f49e263
 
 For this model we used recurrent neural networks with seq2seq architecture. Tensorflow 1.0.0 and python 3.5. The model’s architecture is composed of an encoder and decoder. The encoder gathers information from the input sequence and feeds it into the decoder, which produces the output sequence. The data set used was the Cornell movie lines data set. The data is preprocessed to allow for the neural network to read the data. Since the data is categorical, the text is transformed to integer values which were gained from mapping the lines with the conversation numbers in a hash table. Lines that reached a threshold of 20 had to be removed, as this would increase the time taken for the RNN to train the data. A cross validation approach is used with a 20-80 split for training and test data. 
 
@@ -56,3 +58,4 @@ Currently, chatbots are now an essential tool for businesses to handle customers
 # Interface Examples of Chatbots
 
 ![Screen Shot 2021-08-18 at 5 47 05 PM](https://user-images.githubusercontent.com/35156624/130003646-0ed3eeb5-2505-4728-bb6a-f188c79e0ac0.png)
+Figure 1.3, interface of chatbot
