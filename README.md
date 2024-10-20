@@ -1,6 +1,5 @@
-# SmartBot
+# Conversational AI 
 
-![image](https://user-images.githubusercontent.com/35156624/127047027-2f35a3e2-67fa-4883-82e1-9f5395ae40f8.png)
  
 Conversational ChatBot's built using Seq2Seq model, Decision Tree's & Random Forests models. Python 3.6 & tensorflow 1.0.0. Comparision of chatbot's on performance and accuracy.
 
@@ -12,9 +11,6 @@ To run the neural net and bayes classifier chat bot please input program name an
 
 There is a pre-trained model called chatbot_weight.ckpt. If using this pre-trained model, one can run the preprocessing data, model building parts of the jupyter notebook. Then one can skip the training part and go to the testing part of the notebook. Warning: training the model will take a considerably long time if not using a GPU booster. To quit the chatbot enter the word "Goodbye" and the chatbot will exit. Trained model will not provide accurate results, trained on 3 epochs, will need further training if more accurate results are desired. 
 
-# Introduction
-
-Our goal for this project was to explore the difference between very naive methods for allowing a bot to interact with a human, first just by providing classification methods to come up with an expected response based on bayes calculation for a classifier. From there, we scaled up the bot by using machine learning techniques that allow the bot to learn from a dataset of test cases that will ideally achieve a better response rate from the bot. The testing data varies depending on the needs of the algorithm; the simpler multinomial bayes use more directed data that simulates specific questions and responses for a situation where the bot will help a user get an account, reset a password, etc. As the learning techniques advances we experimented with different types of data to understand how more human-like bots depend on a broader understanding of the English language in order to formulate competent and meaningful responses, especially those out of scope of the expected questions. Below is a breakdown of each learning technique. 
 
 # Multinomial Bayes Classifier
 
